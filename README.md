@@ -1,0 +1,2 @@
+# EduNova
+Education Platform
