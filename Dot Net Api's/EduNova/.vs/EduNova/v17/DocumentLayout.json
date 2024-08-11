@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CA85279-107E-450D-9AD7-FB53552AA6FC}|EduNova\\EduNova.csproj|d:\\edunova\\dot net api\u0027s\\edunova\\edunova\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA85279-107E-450D-9AD7-FB53552AA6FC}|EduNova\\EduNova.csproj|solutionrelative:edunova\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CA85279-107E-450D-9AD7-FB53552AA6FC}|EduNova\\EduNova.csproj|d:\\edunova\\dot net api\u0027s\\edunova\\edunova\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CA85279-107E-450D-9AD7-FB53552AA6FC}|EduNova\\EduNova.csproj|solutionrelative:edunova\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\EduNova\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "EduNova\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\EduNova\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "EduNova\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T13:57:06.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\EduNova\\Program.cs",
               "RelativeDocumentMoniker": "EduNova\\Program.cs",
@@ -42,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EdunovadbContext.cs",
               "DocumentMoniker": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\EduNova\\Models\\EdunovadbContext.cs",
               "RelativeDocumentMoniker": "EduNova\\Models\\EdunovadbContext.cs",
@@ -54,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RegistrationDTO.cs",
               "DocumentMoniker": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\EduNova\\Models\\RegistrationDTO.cs",
               "RelativeDocumentMoniker": "EduNova\\Models\\RegistrationDTO.cs",
@@ -66,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RegistrationController.cs",
               "DocumentMoniker": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\EduNova\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "EduNova\\Controllers\\RegistrationController.cs",
               "ToolTip": "D:\\EduNova\\Dot Net Api\u0027s\\EduNova\\EduNova\\Controllers\\RegistrationController.cs",
               "RelativeToolTip": "EduNova\\Controllers\\RegistrationController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAYwCwAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T10:19:55.684Z",
               "EditorCaption": ""

@@ -254,3 +254,4 @@ D:\EduNova\Dot Net Api's\EduNova\EduNova\obj\Debug\net8.0\refint\EduNova.dll
 D:\EduNova\Dot Net Api's\EduNova\EduNova\obj\Debug\net8.0\EduNova.pdb
 D:\EduNova\Dot Net Api's\EduNova\EduNova\obj\Debug\net8.0\EduNova.genruntimeconfig.cache
 D:\EduNova\Dot Net Api's\EduNova\EduNova\obj\Debug\net8.0\ref\EduNova.dll
+D:\EduNova\Dot Net Api's\EduNova\EduNova\obj\Debug\net8.0\EduNova.sourcelink.json
