@@ -1,0 +1,6 @@
+@EduNova_HostAddress = http://localhost:5117
+
+GET {{EduNova_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
