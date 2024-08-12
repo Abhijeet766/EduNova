@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Cors;
 using EduNova.Models;
 using System.Threading.Tasks;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
+[EnableCors]
 public class RegistrationController : ControllerBase
 {
     private readonly EdunovadbContext _context;

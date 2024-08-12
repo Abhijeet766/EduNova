@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.example.demo.repo.AdminRepository"/>
+    <fullyQualifiedTypeName name="com.example.demo.repo.TrainerRepository"/>
+    <fullyQualifiedTypeName name="com.example.demo.services.AdminService"/>
+    <fullyQualifiedTypeName name="com.example.demo.entities.Admin"/>
+    <fullyQualifiedTypeName name="com.example.demo.services.TrainerService"/>
+    <fullyQualifiedTypeName name="com.example.demo.entities.Trainer"/>
+</qualifiedTypeNameHistroy>

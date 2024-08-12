@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduNova")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4163c5d6668d74e426f747feaf5e3629cfd7663")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18ad918dcd08c0d130e06b39fddaa79fa20f5d66")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduNova")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduNova")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

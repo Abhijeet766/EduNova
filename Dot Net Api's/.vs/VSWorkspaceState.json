@@ -3,7 +3,9 @@
     "",
     "\\EduNova",
     "\\EduNova\\EduNova",
-    "\\EduNova\\EduNova\\Controllers"
+    "\\EduNova\\EduNova\\bin",
+    "\\EduNova\\EduNova\\Controllers",
+    "\\EduNova\\EduNova\\Models"
   ],
   "SelectedNode": "\\EduNova\\EduNova\\Controllers\\RegistrationController.cs",
   "PreviewInSolutionExplorer": false
