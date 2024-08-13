@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\EduNova\\EduNove_Net\\WebApplication2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RegistrationController.cs",
               "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Controllers\\RegistrationController.cs",
@@ -67,15 +67,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\UsersController.cs",
               "RelativeToolTip": "WebApplication2\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T12:48:04.591Z"
+              "WhenOpened": "2024-08-12T12:48:04.591Z",
+              "EditorCaption": ""
             }
           ]
         }
