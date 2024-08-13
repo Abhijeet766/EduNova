@@ -8393,11 +8393,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EduNove_Net\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
+      "projectUniqueName": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
       "projectName": "WebApplication2",
-      "projectPath": "D:\\EduNove_Net\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
+      "projectPath": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
       "packagesPath": "C:\\Users\\Ujjwal\\.nuget\\packages\\",
-      "outputPath": "D:\\EduNove_Net\\WebApplication2\\WebApplication2\\obj\\",
+      "outputPath": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ujjwal\\AppData\\Roaming\\NuGet\\NuGet.Config",

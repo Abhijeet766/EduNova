@@ -6,102 +6,92 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Models;
+using Microsoft.AspNetCore.Cors;
+using Mono.TextTemplating;
+using WebApplication2.Models;
 
-namespace WebApplication2.Controllers
+namespace APIConnect.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[Action]")]
     [ApiController]
+    [EnableCors]
     public class UsersController : ControllerBase
     {
-        private readonly EdunovadbContext _context;
-
-        public UsersController(EdunovadbContext context)
-        {
-            _context = context;
-        }
-
-        // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+
+        public List<User> GetUser()
         {
-            return await _context.Users.ToListAsync();
+            List<User> list = new List<User>();
+            using (var db = new EdunovadbContext())
+            {
+                list = db.Users.ToList();
+            }
+            return list;
+        }
+        [HttpGet]
+        public List<User> GetUserwithRole()
+        {
+            List<User> list = new List<User>();
+            using (var db = new EdunovadbContext())
+            {
+                list = db.Users.Include(add => add.Role).ToList();
+            }
+            return list;
         }
 
-        // GET: api/Users/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        [HttpGet]
+        public User? GetUserwithId(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-
-            if (user == null)
+            User? user = new User();
+            using (var db = new EdunovadbContext())
             {
-                return NotFound();
+                user = db.Users.Find(id);
             }
-
             return user;
         }
 
-        // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(int id, User user)
-        {
-            if (id != user.UId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(user).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public User SaveUser(User user)
         {
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUser", new { id = user.UId }, user);
-        }
-
-        // DELETE: api/Users/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
-        {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
+            using (var db = new EdunovadbContext())
             {
-                return NotFound();
+                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+
+                db.Users.Add(user);
+                db.SaveChanges();
             }
-
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return user;
         }
-
-        private bool UserExists(int id)
+        [HttpPost]
+        public IActionResult CheckLogin(User us)
         {
-            return _context.Users.Any(e => e.UId == id);
+
+            User? user;
+
+            using (var db = new EdunovadbContext())
+            {
+                user = db.Users.Where((u => u.Username == us.Username)).FirstOrDefault();
+            }
+            if (user != null && BCrypt.Net.BCrypt.Verify(us.Password, user.Password))
+            {
+                var response = new
+                {
+                    user.Username,
+                    user.RoleId,
+                };
+                return Ok(response);
+            }
+            return Unauthorized(new { message = "Username or Password is Invalid" });
         }
+
+
+
+
+
+
+
+
     }
+
+
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nAsxsV5Hm68=",
+  "dgSpecHash": "VFVemUu8zVw=",
   "success": true,
-  "projectFilePath": "D:\\EduNove_Net\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
+  "projectFilePath": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ujjwal\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Ujjwal\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

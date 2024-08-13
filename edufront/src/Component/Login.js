@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async () => {
     setError(''); // Clear any previous error
     try {
-      const response = await fetch("https://localhost:7298/api/Users/CheckLogin", {
+      const response = await fetch("https://localhost:7055/api/Users/CheckLogin", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
@@ -28,7 +28,7 @@ const Login = () => {
       const data = await response.json();
       console.log('Login successful:', data);
       localStorage.setItem("LoggedUser", JSON.stringify(data));
-      navigate('/dashboard'); // Redirect to a protected page
+      navigate('/studentDashboard'); // Redirect to a protected page
     } catch (error) {
       setError(error.message);
     }
