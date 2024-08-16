@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Cors;
 using Mono.TextTemplating;
 using WebApplication2.Models;
 
-namespace APIConnect.Controllers
+namespace WebApplication2.Controllers
 {
     [Route("api/[controller]/[Action]")]
     [ApiController]
@@ -66,11 +66,21 @@ namespace APIConnect.Controllers
         public IActionResult CheckLogin(User us)
         {
 
-            User? user;
+            User? user = null;
 
             using (var db = new EdunovadbContext())
             {
                 user = db.Users.Where((u => u.Username == us.Username)).FirstOrDefault();
+                Console.WriteLine(user.RoleId);
+            }
+            if (user.RoleId == 2)
+            {
+                var response = new
+                {
+                    user.Username,
+                    user.RoleId,
+                };
+                return Ok(response);
             }
             if (user != null && BCrypt.Net.BCrypt.Verify(us.Password, user.Password))
             {
