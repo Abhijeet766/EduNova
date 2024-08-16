@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/topics")
+@CrossOrigin(origins = "*") 
 public class TopicController {
 
     @Autowired

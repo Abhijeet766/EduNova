@@ -7,6 +7,7 @@ import com.example.demo.services.TrainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 
@@ -26,6 +27,11 @@ public class TrainerServiceImpl implements TrainerService {
     @Override
     public Optional<Trainer> getTrainerById(int id) {
         return trainerRepository.findById(id);
+    }
+    
+    @Override
+    public List<Trainer> getAllTrainers() {
+        return trainerRepository.findAll();
     }
 
     @Override

@@ -1,6 +1,7 @@
 // src/components/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -11,12 +12,10 @@ const Login = () => {
   const handleLogin = async () => {
     setError(''); // Clear any previous error.
 
-    
     if (username === 'Admin' && password === 'Admin@123') {
       navigate('/adminDashboard'); // Redirecting to admin dashboard.
       return;
     }
-
 
     try {
       const response = await fetch("https://localhost:7055/api/Users/CheckLogin", {
@@ -36,16 +35,26 @@ const Login = () => {
       const data = await response.json();
       console.log('Login successful:', data);
       localStorage.setItem("LoggedUser", JSON.stringify(data));
-      navigate('/studentDashboard'); // Redirect to student loggedin page.
+      navigate('/studentDashboard'); // Redirect to student logged-in page.
     } catch (error) {
       setError(error.message);
     }
   };
 
+  const handleBackToHomepage = () => {
+    navigate('/'); // Navigate to the homepage
+  };
+
   return (
     <div className="container mt-4">
-      <header className="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom">
-        <h1 className="h3">Login</h1>
+      <header className="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom position-relative">
+        <h1 className="h3 mb-0">Login</h1>
+        <button 
+          className="btn btn-secondary position-absolute top-0 end-0 mt-3 me-3"
+          onClick={handleBackToHomepage}
+        >
+          Back to Home
+        </button>
       </header>
       <main className="text-center">
         <h2 className="mb-4">Login to EduNova</h2>

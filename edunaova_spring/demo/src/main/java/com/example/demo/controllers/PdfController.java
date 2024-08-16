@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/pdfs")
+@CrossOrigin(origins = "*") 
 public class PdfController {
 
     @Autowired

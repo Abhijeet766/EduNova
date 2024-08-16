@@ -1,5 +1,6 @@
 package com.example.demo.controllers;
 import com.example.demo.entities.Trainer;
+import java.util.*;
 import com.example.demo.services.TrainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/trainers")
+@CrossOrigin(origins = "*") 
 public class TrainerController {
 
     @Autowired
@@ -24,6 +26,12 @@ public class TrainerController {
     public ResponseEntity<Trainer> getTrainerById(@PathVariable int id) {
         Optional<Trainer> trainer = trainerService.getTrainerById(id);
         return trainer.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    }
+    
+    @GetMapping
+    public ResponseEntity<List<Trainer>> getAllTrainers() {
+        List<Trainer> trainers = trainerService.getAllTrainers();
+        return ResponseEntity.ok(trainers);
     }
 
     @PutMapping("/{id}")

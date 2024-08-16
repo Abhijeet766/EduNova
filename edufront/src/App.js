@@ -12,8 +12,10 @@ import AdminDashboard from './Component/AdminDashBoard';
 import StudentDashboard from './Component/StudentDashboard';
 import Navbar from './Component/Navbar';
 import Courses from './Component/Courses';
-import Contact from './Component/Contact';
 import AboutUs from './Component/AboutUs';
+import SuccessStories from './Component/SuccessStiries';
+import Trainers from './Component/Trainers';
+import ContactUs from './Component/Contact';
 function App() {
   return (
     <Router>
@@ -26,8 +28,10 @@ function App() {
         <Route path='/' element={<AdminDashboard/>}/>
         <Route path="/studentDashboard" element={<StudentDashboard/>}/>
         <Route path="/courses" element={<Courses/>} />
-        <Route path="/contacts" element={<Contact/>}/>
-        <Route path="/about" element={<AboutUs/>} />
+        <Route path='/about-us' element={<AboutUs/>}/>
+        <Route path='/contact-us' element={<ContactUs/>}/>
+        <Route path='/success-stories' element={<SuccessStories/>}/>
+        <Route path='/trainers' element={<Trainers/>}/>
       </Routes>
     </Router>
   );

@@ -19,27 +19,23 @@ const AdminDashboard = () => {
     password: '',
     roleId: 3,
   });
-
-  // Validation state.
+  
+  // Validation state
   const [errors, setErrors] = useState({});
-  const [isTrainerFormValid, setIsTrainerFormValid] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
 
-  // Course form state.
+  // Course form state
   const [courseName, setCourseName] = useState('');
-  const [courseError, setCourseError] = useState('');
-  const [isCourseFormValid, setIsCourseFormValid] = useState(false);
 
   const navigate = useNavigate();
 
-  // Handle changes for trainer form.
   const handleTrainerChange = (e) => {
     const { name, value } = e.target;
     setTrainerData((prevState) => ({ ...prevState, [name]: value }));
-    validateTrainerField(name, value);
+    validateField(name, value);
   };
 
-  // Validate trainer form fields.
-  const validateTrainerField = (field, value) => {
+  const validateField = (field, value) => {
     let newErrors = { ...errors };
 
     switch (field) {
@@ -67,22 +63,24 @@ const AdminDashboard = () => {
     }
 
     setErrors(newErrors);
-    checkTrainerFormValidity(newErrors);
+    checkFormValidity(newErrors);
   };
 
-  // Check trainer form validity.
-  const checkTrainerFormValidity = (newErrors) => {
+  const checkFormValidity = (newErrors) => {
     const formValid =
       Object.values(newErrors).every((error) => error === '') &&
       Object.values(trainerData).every((value) => String(value).trim() !== '');
 
-    setIsTrainerFormValid(formValid);
+    setIsFormValid(formValid);
   };
 
-  // Handle trainer addition.
-  const handleAddTrainer = async () => {
-    if (!isTrainerFormValid) return;
+  useEffect(() => {
+    checkFormValidity(errors);
+  }, [trainerData, errors]);
 
+  const handleAddTrainer = async () => {
+    if (!isFormValid) return;
+  
     try {
       const response = await fetch('https://localhost:7298/api/Registration/saveTrainer', {
         method: 'POST',
@@ -98,7 +96,7 @@ const AdminDashboard = () => {
           }
         }),
       });
-
+  
       if (response.ok) {
         alert('Trainer added successfully!');
         setTrainerData({
@@ -123,30 +121,16 @@ const AdminDashboard = () => {
     }
   };
 
-  // Handle course/subject.
-  const handleCourseChange = (e) => {
-    const { value } = e.target;
-    setCourseName(value);
-    validateCourseName(value);
-  };
-
-  // Validate course/subject name.
-  const validateCourseName = (value) => {
-    setCourseError(value.trim() ? '' : 'Course name is required');
-    setIsCourseFormValid(value.trim() !== '');
-  };
-
-  // Handle course addition.
   const handleAddCourse = async () => {
-    if (!isCourseFormValid) return;
-
     try {
-      const response = await fetch('https://localhost:7298/api/Subjects', {
+      const response = await fetch('https://localhost:7055/api/Subjects', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ subjectName: courseName }),
+        body: JSON.stringify({
+          name: courseName
+        }),
       });
 
       if (response.ok) {
@@ -177,13 +161,13 @@ const AdminDashboard = () => {
             className="btn btn-primary me-2"
             onClick={() => setShowAddTrainer(!showAddTrainer)}
           >
-            {showAddTrainer ? 'Cancel Add Trainer' : 'Add Trainer'}
+            {showAddTrainer ? 'Cancel Trainer' : 'Add Trainer'}
           </button>
           <button
             className="btn btn-primary"
             onClick={() => setShowAddCourse(!showAddCourse)}
           >
-            {showAddCourse ? 'Cancel Add Course' : 'Add Course'}
+            {showAddCourse ? 'Cancel Course' : 'Add Course'}
           </button>
         </div>
 
@@ -191,7 +175,6 @@ const AdminDashboard = () => {
           <div className="mb-4">
             <h3>Add Trainer</h3>
             {/* Trainer form fields */}
-            {/* (Same fields as before) */}
             <div className="form-group mb-3">
               <input
                 type="text"
@@ -203,15 +186,102 @@ const AdminDashboard = () => {
               />
               {errors.firstName && <div className="text-danger">{errors.firstName}</div>}
             </div>
-            {/* (Other trainer fields here) */}
+            <div className="form-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                name="lastName"
+                placeholder="Last Name"
+                value={trainerData.lastName}
+                onChange={handleTrainerChange}
+              />
+              {errors.lastName && <div className="text-danger">{errors.lastName}</div>}
+            </div>
+            <div className="form-group mb-3">
+              <input
+                type="email"
+                className="form-control"
+                name="email"
+                placeholder="Email"
+                value={trainerData.email}
+                onChange={handleTrainerChange}
+              />
+              {errors.email && <div className="text-danger">{errors.email}</div>}
+            </div>
+            <div className="form-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                name="address"
+                placeholder="Address"
+                value={trainerData.address}
+                onChange={handleTrainerChange}
+              />
+              {errors.address && <div className="text-danger">{errors.address}</div>}
+            </div>
+            <div className="form-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                name="qualification"
+                placeholder="Qualification"
+                value={trainerData.qualification}
+                onChange={handleTrainerChange}
+              />
+              {errors.qualification && <div className="text-danger">{errors.qualification}</div>}
+            </div>
+            <div className="form-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                name="specialization"
+                placeholder="Specialization"
+                value={trainerData.specialization}
+                onChange={handleTrainerChange}
+              />
+              {errors.specialization && <div className="text-danger">{errors.specialization}</div>}
+            </div>
+            <div className="form-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                name="phoneNo"
+                placeholder="Phone Number"
+                value={trainerData.phoneNo}
+                onChange={handleTrainerChange}
+              />
+              {errors.phoneNo && <div className="text-danger">{errors.phoneNo}</div>}
+            </div>
+            <div className="form-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                name="userName"
+                placeholder="Username"
+                value={trainerData.userName}
+                onChange={handleTrainerChange}
+              />
+              {errors.userName && <div className="text-danger">{errors.userName}</div>}
+            </div>
+            <div className="form-group mb-3">
+              <input
+                type="password"
+                className="form-control"
+                name="password"
+                placeholder="Password"
+                value={trainerData.password}
+                onChange={handleTrainerChange}
+              />
+              {errors.password && <div className="text-danger">{errors.password}</div>}
+            </div>
             <button
               className="btn btn-primary"
               onClick={handleAddTrainer}
-              disabled={!isTrainerFormValid}
+              disabled={!isFormValid}
               style={{
-                backgroundColor: isTrainerFormValid ? 'darkblue' : 'lightblue',
+                backgroundColor: isFormValid ? 'darkblue' : 'lightblue',
                 color: 'white',
-                cursor: isTrainerFormValid ? 'pointer' : 'not-allowed',
+                cursor: isFormValid ? 'pointer' : 'not-allowed',
               }}
             >
               Add Trainer
@@ -228,20 +298,10 @@ const AdminDashboard = () => {
                 className="form-control"
                 placeholder="Course Name"
                 value={courseName}
-                onChange={handleCourseChange}
+                onChange={(e) => setCourseName(e.target.value)}
               />
-              {courseError && <div className="text-danger">{courseError}</div>}
             </div>
-            <button
-              className="btn btn-primary"
-              onClick={handleAddCourse}
-              disabled={!isCourseFormValid}
-              style={{
-                backgroundColor: isCourseFormValid ? 'darkblue' : 'lightblue',
-                color: 'white',
-                cursor: isCourseFormValid ? 'pointer' : 'not-allowed',
-              }}
-            >
+            <button className="btn btn-primary" onClick={handleAddCourse}>
               Add Course
             </button>
           </div>
