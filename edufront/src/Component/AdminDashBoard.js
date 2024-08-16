@@ -1,28 +1,118 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AdminDashboard = () => {
   const [showAddTrainer, setShowAddTrainer] = useState(false);
   const [showAddCourse, setShowAddCourse] = useState(false);
-  const [trainerName, setTrainerName] = useState('');
+
+  // Trainer form state
+  const [trainerData, setTrainerData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    address: '',
+    qualification: '',
+    specialization: '',
+    phoneNo: '',
+    userName: '',
+    password: '',
+    roleId: 3,
+  });
+
+  // Validation state.
+  const [errors, setErrors] = useState({});
+  const [isTrainerFormValid, setIsTrainerFormValid] = useState(false);
+
+  // Course form state.
   const [courseName, setCourseName] = useState('');
-  const [courseDescription, setCourseDescription] = useState('');
+  const [courseError, setCourseError] = useState('');
+  const [isCourseFormValid, setIsCourseFormValid] = useState(false);
+
   const navigate = useNavigate();
 
+  // Handle changes for trainer form.
+  const handleTrainerChange = (e) => {
+    const { name, value } = e.target;
+    setTrainerData((prevState) => ({ ...prevState, [name]: value }));
+    validateTrainerField(name, value);
+  };
+
+  // Validate trainer form fields.
+  const validateTrainerField = (field, value) => {
+    let newErrors = { ...errors };
+
+    switch (field) {
+      case 'firstName':
+      case 'lastName':
+      case 'address':
+      case 'qualification':
+      case 'specialization':
+        newErrors[field] = value.trim() ? '' : 'This field is required';
+        break;
+      case 'email':
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        newErrors.email = emailPattern.test(value) ? '' : 'Invalid email address';
+        break;
+      case 'phoneNo':
+        const phonePattern = /^[0-9]{10}$/;
+        newErrors.phoneNo = phonePattern.test(value) ? '' : 'Invalid phone number';
+        break;
+      case 'userName':
+      case 'password':
+        newErrors[field] = value.trim() ? '' : 'This field is required';
+        break;
+      default:
+        break;
+    }
+
+    setErrors(newErrors);
+    checkTrainerFormValidity(newErrors);
+  };
+
+  // Check trainer form validity.
+  const checkTrainerFormValidity = (newErrors) => {
+    const formValid =
+      Object.values(newErrors).every((error) => error === '') &&
+      Object.values(trainerData).every((value) => String(value).trim() !== '');
+
+    setIsTrainerFormValid(formValid);
+  };
+
+  // Handle trainer addition.
   const handleAddTrainer = async () => {
+    if (!isTrainerFormValid) return;
+
     try {
-      const response = await fetch('https://localhost:7055/api/Trainer', {
+      const response = await fetch('https://localhost:7298/api/Registration/saveTrainer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name: trainerName }),
+        body: JSON.stringify({
+          ...trainerData,
+          uIdNavigation: {
+            roleId: trainerData.roleId,
+            username: trainerData.userName,
+            password: trainerData.password
+          }
+        }),
       });
 
       if (response.ok) {
         alert('Trainer added successfully!');
-        setTrainerName('');
+        setTrainerData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          address: '',
+          qualification: '',
+          specialization: '',
+          phoneNo: '',
+          userName: '',
+          password: '',
+          roleId: 3,
+        });
         setShowAddTrainer(false);
       } else {
         alert('Failed to add trainer');
@@ -33,23 +123,35 @@ const AdminDashboard = () => {
     }
   };
 
+  // Handle course/subject.
+  const handleCourseChange = (e) => {
+    const { value } = e.target;
+    setCourseName(value);
+    validateCourseName(value);
+  };
+
+  // Validate course/subject name.
+  const validateCourseName = (value) => {
+    setCourseError(value.trim() ? '' : 'Course name is required');
+    setIsCourseFormValid(value.trim() !== '');
+  };
+
+  // Handle course addition.
   const handleAddCourse = async () => {
+    if (!isCourseFormValid) return;
+
     try {
-      const response = await fetch('https://localhost:7055/api/Course', {
+      const response = await fetch('https://localhost:7298/api/Subjects', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          name: courseName,
-          description: courseDescription,
-        }),
+        body: JSON.stringify({ subjectName: courseName }),
       });
 
       if (response.ok) {
         alert('Course added successfully!');
         setCourseName('');
-        setCourseDescription('');
         setShowAddCourse(false);
       } else {
         alert('Failed to add course');
@@ -88,16 +190,30 @@ const AdminDashboard = () => {
         {showAddTrainer && (
           <div className="mb-4">
             <h3>Add Trainer</h3>
-            <div className="mb-3">
+            {/* Trainer form fields */}
+            {/* (Same fields as before) */}
+            <div className="form-group mb-3">
               <input
                 type="text"
                 className="form-control"
-                placeholder="Trainer Name"
-                value={trainerName}
-                onChange={(e) => setTrainerName(e.target.value)}
+                name="firstName"
+                placeholder="First Name"
+                value={trainerData.firstName}
+                onChange={handleTrainerChange}
               />
+              {errors.firstName && <div className="text-danger">{errors.firstName}</div>}
             </div>
-            <button className="btn btn-primary" onClick={handleAddTrainer}>
+            {/* (Other trainer fields here) */}
+            <button
+              className="btn btn-primary"
+              onClick={handleAddTrainer}
+              disabled={!isTrainerFormValid}
+              style={{
+                backgroundColor: isTrainerFormValid ? 'darkblue' : 'lightblue',
+                color: 'white',
+                cursor: isTrainerFormValid ? 'pointer' : 'not-allowed',
+              }}
+            >
               Add Trainer
             </button>
           </div>
@@ -112,18 +228,20 @@ const AdminDashboard = () => {
                 className="form-control"
                 placeholder="Course Name"
                 value={courseName}
-                onChange={(e) => setCourseName(e.target.value)}
+                onChange={handleCourseChange}
               />
+              {courseError && <div className="text-danger">{courseError}</div>}
             </div>
-            <div className="mb-3">
-              <textarea
-                className="form-control"
-                placeholder="Course Description"
-                value={courseDescription}
-                onChange={(e) => setCourseDescription(e.target.value)}
-              />
-            </div>
-            <button className="btn btn-primary" onClick={handleAddCourse}>
+            <button
+              className="btn btn-primary"
+              onClick={handleAddCourse}
+              disabled={!isCourseFormValid}
+              style={{
+                backgroundColor: isCourseFormValid ? 'darkblue' : 'lightblue',
+                color: 'white',
+                cursor: isCourseFormValid ? 'pointer' : 'not-allowed',
+              }}
+            >
               Add Course
             </button>
           </div>
@@ -137,4 +255,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default AdminDashboard;

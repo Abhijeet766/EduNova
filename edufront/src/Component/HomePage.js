@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';    // Import Bootstrap CSS
 
-const Homepage = () => {
+const HomePage = () => {
   const navigate = useNavigate();
 
   const handleLearnMore = (path) => {
@@ -63,4 +63,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;

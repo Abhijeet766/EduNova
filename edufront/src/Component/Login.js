@@ -9,7 +9,15 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    setError(''); // Clear any previous error
+    setError(''); // Clear any previous error.
+
+    
+    if (username === 'Admin' && password === 'Admin@123') {
+      navigate('/adminDashboard'); // Redirecting to admin dashboard.
+      return;
+    }
+
+
     try {
       const response = await fetch("https://localhost:7055/api/Users/CheckLogin", {
         method: 'POST',
@@ -28,7 +36,7 @@ const Login = () => {
       const data = await response.json();
       console.log('Login successful:', data);
       localStorage.setItem("LoggedUser", JSON.stringify(data));
-      navigate('/studentDashboard'); // Redirect to a protected page
+      navigate('/studentDashboard'); // Redirect to student loggedin page.
     } catch (error) {
       setError(error.message);
     }
@@ -71,4 +79,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Login;

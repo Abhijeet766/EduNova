@@ -10,9 +10,9 @@ const Contact = () => {
           <div className="card p-3">
             <h5>Email</h5>
             <a href="mailto:vaishnavisonawane635@gmail.com">vaishnavisonawane635@gmail.com</a>
-            <a href="salonisingh15jun@gmail.com">salonisingh15jun@gmail.com</a>
             <a href="abhijeetsinghthakur567@gmail.com">abhijeetsinghthakur567@gmail.com</a>
             <a href="adicheaten1090@gmail.com">adicheaten1090@gmail.com</a>
+            <a href="salonisingh15jun@gmail.com">salonisingh15jun@gmail.com</a>
           </div>
         </div>
         <div className="col-md-6 mb-4">

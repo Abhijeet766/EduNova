@@ -1,42 +1,42 @@
 package com.example.demo.controllers;
 
-
+import com.example.demo.entities.Admin;
+import com.example.demo.services.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.entities.Admin;
-import com.example.demo.services.AdminService;
-
-import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/admins")
-@CrossOrigin(origins = "*") // Allow all origins
 public class AdminController {
-	 @Autowired
-	    private AdminService adminService;
 
-	    @GetMapping
-	    public List<Admin> getAllAdmins() {
-	        return adminService.getAllAdmins(); // Should return List<Admin>
-	    }
+    @Autowired
+    private AdminService adminService;
 
-	    @PostMapping
-	    public Admin createAdmin(@RequestBody Admin admin) {
-	        return adminService.createAdmin(admin);
-	    }
+    @PostMapping
+    public ResponseEntity<Admin> createAdmin(@RequestBody Admin admin) {
+        Admin createdAdmin = adminService.createAdmin(admin);
+        return ResponseEntity.ok(createdAdmin);
+    }
 
-	    @GetMapping("/{id}")
-	    public ResponseEntity<Admin> getAdminById(@PathVariable Long id) {
-	        return adminService.getAdminById(id)
-	                .map(ResponseEntity::ok)
-	                .orElse(ResponseEntity.notFound().build());
-	    }
+    @GetMapping("/{id}")
+    public ResponseEntity<Admin> getAdminById(@PathVariable int id) {
+        Optional<Admin> admin = adminService.getAdminById(id);
+        return admin.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    }
 
-	    @DeleteMapping("/{id}")
-	    public ResponseEntity<Void> deleteAdmin(@PathVariable Long id) {
-	        adminService.deleteAdmin(id);
-	        return ResponseEntity.noContent().build();
-	    }
+    @PutMapping("/{id}")
+    public ResponseEntity<Admin> updateAdmin(@PathVariable int id, @RequestBody Admin admin) {
+        admin.setAdminId(id);
+        Admin updatedAdmin = adminService.updateAdmin(admin);
+        return ResponseEntity.ok(updatedAdmin);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteAdmin(@PathVariable int id) {
+        adminService.deleteAdmin(id);
+        return ResponseEntity.noContent().build();
+    }
 }

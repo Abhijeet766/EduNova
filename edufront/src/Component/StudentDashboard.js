@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
   const [courses, setCourses] = useState([]);
   const [notifications, setNotifications] = useState([]);
 
-  // Simulate fetching data on component mount
+  // Simulate fetching data on component mount.
   useEffect(() => {
     // Fetch courses
     fetch('/api/courses')
