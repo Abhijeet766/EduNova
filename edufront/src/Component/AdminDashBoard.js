@@ -19,7 +19,7 @@ const AdminDashboard = () => {
     password: '',
     roleId: 3,
   });
-  
+
   // Validation state
   const [errors, setErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
@@ -80,9 +80,9 @@ const AdminDashboard = () => {
 
   const handleAddTrainer = async () => {
     if (!isFormValid) return;
-  
+
     try {
-      const response = await fetch('https://localhost:7298/api/Registration/saveTrainer', {
+      const response = await fetch('https://localhost:7055/api/Registration/saveTrainer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ const AdminDashboard = () => {
           }
         }),
       });
-  
+
       if (response.ok) {
         alert('Trainer added successfully!');
         setTrainerData({
@@ -123,14 +123,12 @@ const AdminDashboard = () => {
 
   const handleAddCourse = async () => {
     try {
-      const response = await fetch('https://localhost:7055/api/Subjects', {
+      const response = await fetch('https://localhost:7055/api/subjects', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          name: courseName
-        }),
+        body: JSON.stringify({ subjectName: courseName }),
       });
 
       if (response.ok) {

@@ -14,7 +14,7 @@ const Trainers = () => {
     // Fetch trainers from the backend
     const fetchTrainers = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/trainers');
+        const response = await axios.get('https://localhost:7055/api/Registration/saveTrainer');
         setTrainers(response.data);
       } catch (error) {
         console.error('Error fetching trainers:', error);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { Modal, Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,6 +7,15 @@ const Courses = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const navigate = useNavigate();
+  // const [courses, setCourses] = useState([]);
+  
+  useEffect(() => {
+    // Fetch courses (subjects) and notifications
+    // fetch('http://localhost:8080/api/subjects')
+    //   .then(response => response.json())
+    //   .then(data => setCourses(data))
+    //   .catch(error => console.error('Error fetching courses:', error));
+  }, []);
 
   const courses = [
     {
@@ -64,10 +73,10 @@ const Courses = () => {
           <div className="p-3" key={index}>
             <Card style={{ width: '18rem' }}>
               <Card.Body>
-                <Card.Title>{course.name}</Card.Title>
-                <Card.Text>
+                <Card.Title>{course.subjectName}</Card.Title>
+                {/* <Card.Text>
                   {course.content.substring(0, 100)}...
-                </Card.Text>
+                </Card.Text> */}
                 <Button variant="primary" onClick={() => handleShowModal(course)}>View More</Button>
               </Card.Body>
             </Card>
@@ -77,11 +86,11 @@ const Courses = () => {
 
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>{selectedCourse?.name}</Modal.Title>
+          <Modal.Title>{selectedCourse?.subjectName}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        {/* <Modal.Body>
           <p>{selectedCourse?.content}</p>
-        </Modal.Body>
+        </Modal.Body> */}
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
             Close

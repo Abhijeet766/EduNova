@@ -34,8 +34,8 @@ const Login = () => {
 
       const data = await response.json();
       console.log('Login successful:', data);
-      localStorage.setItem("LoggedUser", JSON.stringify(data));
-      navigate('/studentDashboard'); // Redirect to student logged-in page.
+      localStorage.setItem("LoggedUser", JSON.stringify(data)); // Store user data
+      navigate('/studentDashboard'); // Redirect to student dashboard
     } catch (error) {
       setError(error.message);
     }
