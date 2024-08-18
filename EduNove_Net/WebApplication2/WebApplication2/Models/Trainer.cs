@@ -23,7 +23,7 @@ public partial class Trainer
 
     public int? UId { get; set; }
 
-    public virtual ICollection<SubjectTrainer> SubjectTrainers { get; set; } = new List<SubjectTrainer>();
+   // public virtual ICollection<SubjectTrainer> SubjectTrainers { get; set; } = new List<SubjectTrainer>();
 
     public virtual User? UIdNavigation { get; set; }
 }

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\EduNova\\EduNove_Net\\WebApplication2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\edunovadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\edunovadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,28 +31,64 @@
       "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\examination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\examination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\examquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\examquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\studentenrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\studentenrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\studentexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\studentexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\subjecttrainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\subjecttrainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|d:\\edunova\\edunove_net\\webapplication2\\webapplication2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6A2C6E-8A64-4B80-81A4-60013F050024}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,32 +98,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pdf.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Pdf.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Pdf.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Pdf.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Pdf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "EdunovadbContext.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\EdunovadbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\EdunovadbContext.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\EdunovadbContext.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\EdunovadbContext.cs",
+              "ViewState": "AQIAAFUBAAAAAAAAAAAjwFwBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:40:22.169Z",
+              "WhenOpened": "2024-08-18T04:42:07.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Topic.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Topic.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Topic.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Topic.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Topic.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAiwBcAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Student.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Student.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Student.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA/wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:39:52.766Z",
+              "WhenOpened": "2024-08-12T13:00:51.973Z",
               "EditorCaption": ""
             },
             {
@@ -90,40 +134,234 @@
               "RelativeDocumentMoniker": "WebApplication2\\Models\\Subject.cs",
               "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Subject.cs",
               "RelativeToolTip": "WebApplication2\\Models\\Subject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T06:39:31.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
+              "Title": "Result.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Result.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Result.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Result.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Result.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:46:22.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\RegistrationController.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\RegistrationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:49:07.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAewEkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T12:48:04.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SubjectsController.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\SubjectsController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\SubjectsController.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\SubjectsController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\SubjectsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T04:56:06.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Payment.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Payment.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Payment.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:46:39.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Question.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Question.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Question.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:46:28.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentEnrollment.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\StudentEnrollment.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\StudentEnrollment.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\StudentEnrollment.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\StudentEnrollment.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:46:12.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Trainer.cs",
               "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Trainer.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Models\\Trainer.cs",
               "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Trainer.cs",
               "RelativeToolTip": "WebApplication2\\Models\\Trainer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAUwB0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T06:39:03.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\User.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\User.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\User.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 14,
+              "Title": "StudentExam.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\StudentExam.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\StudentExam.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\StudentExam.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\StudentExam.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABAAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:25:27.742Z",
+              "WhenOpened": "2024-08-18T04:46:07.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "ExamQuestion.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\ExamQuestion.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\ExamQuestion.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\ExamQuestion.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\ExamQuestion.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:46:44.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Examination.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Examination.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Examination.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Examination.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Examination.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:46:54.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentResult.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\StudentResult.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\StudentResult.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\StudentResult.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\StudentResult.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:46:01.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pdf.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Pdf.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Pdf.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Pdf.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Pdf.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:40:22.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SubjectTrainer.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\SubjectTrainer.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\SubjectTrainer.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\SubjectTrainer.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\SubjectTrainer.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:45:48.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Topic.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Topic.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Topic.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Topic.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Topic.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:39:52.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Video.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Video.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Video.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Video.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Video.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T04:40:54.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TrainersController.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\TrainersController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\TrainersController.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\TrainersController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\TrainersController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAUwGYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T04:54:33.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Models\\Admin.cs",
@@ -131,70 +369,19 @@
               "RelativeToolTip": "WebApplication2\\Models\\Admin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T05:14:33.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T05:14:33.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SubjectsController.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\SubjectsController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\SubjectsController.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\SubjectsController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\SubjectsController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAkwFIAAAAAAAAA",
+              "DocumentIndex": 21,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\User.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\User.cs",
+              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\User.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T04:56:06.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TrainersController.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\TrainersController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\TrainersController.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\TrainersController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\TrainersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T04:54:33.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Student.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Models\\Student.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Student.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAUwB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T13:00:51.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegistrationController.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\RegistrationController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\RegistrationController.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\RegistrationController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\RegistrationController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAqwCAAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T12:49:07.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\EduNova\\EduNove_Net\\WebApplication2\\WebApplication2\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAowAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T12:48:04.591Z"
+              "WhenOpened": "2024-08-16T06:25:27.742Z"
             }
           ]
         }

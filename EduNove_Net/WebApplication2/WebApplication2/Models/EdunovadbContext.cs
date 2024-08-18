@@ -18,39 +18,39 @@ public partial class EdunovadbContext : DbContext
 
     public virtual DbSet<Admin> Admins { get; set; }
 
-    public virtual DbSet<ExamQuestion> ExamQuestions { get; set; }
+   // public virtual DbSet<ExamQuestion> ExamQuestions { get; set; }
 
-    public virtual DbSet<Examination> Examinations { get; set; }
+  //  public virtual DbSet<Examination> Examinations { get; set; }
 
-    public virtual DbSet<Payment> Payments { get; set; }
+  //  public virtual DbSet<Payment> Payments { get; set; }
 
-    public virtual DbSet<Pdf> Pdfs { get; set; }
+  //  public virtual DbSet<Pdf> Pdfs { get; set; }
 
-    public virtual DbSet<Question> Questions { get; set; }
+   // public virtual DbSet<Question> Questions { get; set; }
 
-    public virtual DbSet<Result> Results { get; set; }
+   // public virtual DbSet<Result> Results { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<Student> Students { get; set; }
 
-    public virtual DbSet<StudentEnrollment> StudentEnrollments { get; set; }
+  //  public virtual DbSet<StudentEnrollment> StudentEnrollments { get; set; }
 
-    public virtual DbSet<StudentExam> StudentExams { get; set; }
+  //  public virtual DbSet<StudentExam> StudentExams { get; set; }
 
-    public virtual DbSet<StudentResult> StudentResults { get; set; }
+   // public virtual DbSet<StudentResult> StudentResults { get; set; }
 
-    public virtual DbSet<Subject> Subjects { get; set; }
+   public virtual DbSet<Subject> Subjects { get; set; }
 
-    public virtual DbSet<SubjectTrainer> SubjectTrainers { get; set; }
+   // public virtual DbSet<SubjectTrainer> SubjectTrainers { get; set; }
 
-    public virtual DbSet<Topic> Topics { get; set; }
+   // public virtual DbSet<Topic> Topics { get; set; }
 
     public virtual DbSet<Trainer> Trainers { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
-    public virtual DbSet<Video> Videos { get; set; }
+   // public virtual DbSet<Video> Videos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -84,7 +84,7 @@ public partial class EdunovadbContext : DbContext
                 .HasConstraintName("role_id");
         });
 
-        modelBuilder.Entity<ExamQuestion>(entity =>
+        /*modelBuilder.Entity<ExamQuestion>(entity =>
         {
             entity.HasKey(e => e.ExamQuestionId).HasName("PRIMARY");
 
@@ -216,7 +216,7 @@ public partial class EdunovadbContext : DbContext
             entity.HasOne(d => d.Exam).WithMany(p => p.Results)
                 .HasForeignKey(d => d.ExamId)
                 .HasConstraintName("result_ibfk_1");
-        });
+        });*/
 
         modelBuilder.Entity<Role>(entity =>
         {
@@ -262,7 +262,7 @@ public partial class EdunovadbContext : DbContext
                 .HasConstraintName("student_ibfk_1");
         });
 
-        modelBuilder.Entity<StudentEnrollment>(entity =>
+       /* modelBuilder.Entity<StudentEnrollment>(entity =>
         {
             entity.HasKey(e => e.EnrollId).HasName("PRIMARY");
 
@@ -341,7 +341,7 @@ public partial class EdunovadbContext : DbContext
             entity.HasOne(d => d.Student).WithMany(p => p.StudentResults)
                 .HasForeignKey(d => d.StudentId)
                 .HasConstraintName("student_result_ibfk_1");
-        });
+        });*/
 
         modelBuilder.Entity<Subject>(entity =>
         {
@@ -355,7 +355,7 @@ public partial class EdunovadbContext : DbContext
                 .HasColumnName("subject_name");
         });
 
-        modelBuilder.Entity<SubjectTrainer>(entity =>
+      /*  modelBuilder.Entity<SubjectTrainer>(entity =>
         {
             entity.HasKey(e => e.TrainerSubjectId).HasName("PRIMARY");
 
@@ -408,7 +408,7 @@ public partial class EdunovadbContext : DbContext
             entity.HasOne(d => d.Subject).WithMany(p => p.Topics)
                 .HasForeignKey(d => d.SubjectId)
                 .HasConstraintName("topic_ibfk_1");
-        });
+        });*/
 
         modelBuilder.Entity<Trainer>(entity =>
         {
@@ -467,7 +467,7 @@ public partial class EdunovadbContext : DbContext
                 .HasConstraintName("user_ibfk_1");
         });
 
-        modelBuilder.Entity<Video>(entity =>
+       /* modelBuilder.Entity<Video>(entity =>
         {
             entity.HasKey(e => e.VideoId).HasName("PRIMARY");
 
@@ -488,7 +488,7 @@ public partial class EdunovadbContext : DbContext
             entity.HasOne(d => d.Topic).WithMany(p => p.Videos)
                 .HasForeignKey(d => d.TopicId)
                 .HasConstraintName("videos_ibfk_2");
-        });
+        });*/
 
         OnModelCreatingPartial(modelBuilder);
     }

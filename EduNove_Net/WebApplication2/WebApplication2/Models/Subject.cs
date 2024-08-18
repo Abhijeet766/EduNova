@@ -9,13 +9,13 @@ public partial class Subject
 
     public string SubjectName { get; set; } = null!;
 
-    public virtual ICollection<Examination> Examinations { get; set; } = new List<Examination>();
+    //public virtual ICollection<Examination> Examinations { get; set; } = new List<Examination>();
 
-    public virtual ICollection<Pdf> Pdfs { get; set; } = new List<Pdf>();
+   // public virtual ICollection<Pdf> Pdfs { get; set; } = new List<Pdf>();
 
-    public virtual ICollection<SubjectTrainer> SubjectTrainers { get; set; } = new List<SubjectTrainer>();
+  //  public virtual ICollection<SubjectTrainer> SubjectTrainers { get; set; } = new List<SubjectTrainer>();
 
-    public virtual ICollection<Topic> Topics { get; set; } = new List<Topic>();
+   // public virtual ICollection<Topic> Topics { get; set; } = new List<Topic>();
 
-    public virtual ICollection<Video> Videos { get; set; } = new List<Video>();
+  //  public virtual ICollection<Video> Videos { get; set; } = new List<Video>();
 }
