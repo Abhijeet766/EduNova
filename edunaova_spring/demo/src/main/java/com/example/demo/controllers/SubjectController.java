@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.entities.Subject;
 import com.example.demo.services.SubjectService;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/subjects")
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "*")
 public class SubjectController {
 
     @Autowired
@@ -40,5 +41,11 @@ public class SubjectController {
     public ResponseEntity<Void> deleteSubject(@PathVariable int id) {
         subjectService.deleteSubject(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Subject>> getAllSubjects() {
+        List<Subject> subjects = subjectService.getAllSubjects();
+        return ResponseEntity.ok(subjects);
     }
 }

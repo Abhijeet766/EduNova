@@ -6,6 +6,7 @@ import com.example.demo.services.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -40,5 +41,10 @@ public class SubjectServiceImpl implements SubjectService {
         } else {
             throw new RuntimeException("Subject not found");
         }
+    }
+
+    @Override
+    public List<Subject> getAllSubjects() {
+        return subjectRepository.findAll(); // Implement method to retrieve all subjects
     }
 }
